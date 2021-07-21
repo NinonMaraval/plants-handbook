@@ -1,8 +1,11 @@
 import React from 'react';
-import './PlantForm.css';
 
 function PlantForm() {
-  return <div />;
+  return (
+    <div>
+      <p>hey</p>
+    </div>
+  );
 }
 
 export default PlantForm;
