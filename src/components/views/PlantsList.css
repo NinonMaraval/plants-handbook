@@ -1,4 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap');
+
+.container-plantslist {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.container-plantslist {
+  font-family: 'Krub';
+  margin: 10px;
+}
+
+.title {
+  color: #236D5E;
+  text-shadow: #236D5E 1px 0 10px;
+}
+
 .plants-results {
+  margin: 0, auto;
   width: 100%;
   background-color: #236D5E;
   padding-top: 20px;

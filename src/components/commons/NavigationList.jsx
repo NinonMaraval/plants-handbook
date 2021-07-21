@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import home from '../../images/home.svg';
 import plus from '../../images/plus.png';
-import list from '../../images/list.svg';
+import heart from '../../images/heart.png';
 import './NavigationList.css';
 
 function NavigationList() {
@@ -16,7 +16,7 @@ function NavigationList() {
           <img className="logo-navbar" src={plus} alt="logo-add" />
         </Link>
         <Link to="/list">
-          <img className="logo-navbar" src={list} alt="logo-list" />
+          <img className="logo-navbar" src={heart} alt="logo-list" />
         </Link>
       </div>
     </>

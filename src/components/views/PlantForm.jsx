@@ -76,6 +76,7 @@ function PlantForm() {
           />
         </label>
         <FormInput
+          className="textAreaLabel"
           label="Entretien"
           name="entretien"
           type="text"
@@ -93,7 +94,7 @@ function PlantForm() {
               setPlant({ ...plant, category_id: event.target.value });
             }}
           >
-            <option value="">--- Choisissez une catégorie</option>
+            <option value="">Catégorie de plantes</option>
             {select.map((category) => {
               return (
                 <option key={category.id} value={category.id}>
@@ -103,8 +104,8 @@ function PlantForm() {
             })}
           </select>
         </label>
-        <div className="container">
-          <input className="bouton" type="submit" value="Envoyer" />
+        <div className="container-button">
+          <input className="button" type="submit" value="Ajouter !" />
         </div>
       </form>
     </div>

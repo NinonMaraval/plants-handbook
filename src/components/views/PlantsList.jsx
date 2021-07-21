@@ -16,9 +16,9 @@ function PlantsList() {
 
   return (
     <div className="container-plantslist">
-      <h1>Bienvenue dans ton carnet de plantes</h1>
+      <h1 className="title">Bienvenue dans ton carnet de plantes</h1>
       <div className="search-engine">
-        <h2>Cherche une plante</h2>
+        <h2>Cherche une plante !</h2>
         <LookForAPlant
           searchValue={searchValue}
           setSearchValue={setSearchValue}
