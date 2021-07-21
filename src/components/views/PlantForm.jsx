@@ -2,7 +2,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
-import FormInput from '../commons/FormInput';
+import flower2 from '../../images/flower2.png';
 import './PlantForm.css';
 
 function PlantForm() {
@@ -55,13 +55,18 @@ function PlantForm() {
     <div>
       <form className="plantGlobal" onSubmit={handleSubmit}>
         <h1 className="addPlant">Ajouter une plante </h1>
-        <FormInput
-          classInput
-          label="Nom"
-          name="nom"
-          value={plant}
-          setValue={setPlant}
-        />
+        <img className="flower" src={flower2} alt="flower-pic" />
+        <label htmlFor="Nom">
+          <span className="textAreaLabel">Nom:</span>
+          <textarea
+            className="textArea"
+            maxLength="1200"
+            rows="2"
+            id="Nom"
+            onChange={(e) => setPlant({ ...plant, name: e.target.value })}
+            required
+          />
+        </label>
         <label htmlFor="Description">
           <span className="textAreaLabel">Description:</span>
           <textarea
@@ -75,16 +80,19 @@ function PlantForm() {
             required
           />
         </label>
-        <FormInput
-          className="textAreaLabel"
-          label="Entretien"
-          name="entretien"
-          type="text"
-          value={plant}
-          setValue={setPlant}
-        />
+        <label htmlFor="Entretien">
+          <span className="textAreaLabel">Entretien:</span>
+          <textarea
+            className="textArea"
+            maxLength="1200"
+            rows="10"
+            id="Entretien"
+            onChange={(e) => setPlant({ ...plant, care: e.target.value })}
+            required
+          />
+        </label>
         <label htmlFor="category">
-          <span className="select">Catégorie: </span>
+          <span className="select" />
           <select
             className="selectField"
             required
@@ -94,7 +102,9 @@ function PlantForm() {
               setPlant({ ...plant, category_id: event.target.value });
             }}
           >
-            <option value="">Catégorie de plantes</option>
+            <option className="selectField" value="">
+              Catégorie de plantes
+            </option>
             {select.map((category) => {
               return (
                 <option key={category.id} value={category.id}>

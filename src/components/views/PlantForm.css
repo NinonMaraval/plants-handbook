@@ -5,27 +5,41 @@
   text-align: center;
   font-family: 'Krub';
   color: #236d5e;
-  text-shadow: #236D5E 1px 0 10px;
+  text-shadow: #236d5e 1px 0 10px;
 }
 
 .plantGlobal {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-content: center;
+  width: 100%;
   padding: 10px;
   border: solid 1 px;
   box-shadow: 0 10px 10px rgb(134 134 134);
-  margin: 2%;
+  margin: 0, auto;
   margin-bottom: 50px;
+  font-family: 'Krub';
+}
+
+.flower {
+  max-width: 60%;
+  align-self: center;
 }
 
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid ;
+  border: 1px solid;
   height: 40px;
   border-radius: 8px;
   width: 30%;
   font-size: 16px;
+  margin-bottom: 5px;
+  font-family: 'Krub';
+  color: #236d5e;
+  cursor: pointer;
 }
 .button:hover {
   transform: scale(1.1);
@@ -52,6 +66,9 @@
   display: flex;
   font-size: 16px;
   margin-left: 8%;
+  font-family: 'Krub';
+  font-weight: bold;
+  cursor: pointer;
 }
 .textAreaLabel {
   position: relative;
