@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap');
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Krub';
+  text-align: center;
+}
+
+.home-container h1 {
+  color: #236d5e;
+  text-shadow: #236d5e 1px 0 10px;
+}
+
+.home-buttons {
+ display: flex;
+ flex-direction: row;
+ font-family: 'Krub';
+}
+
+.button input {
+  color: #236d5e;
+  font-family: 'Krub';
+  cursor: pointer;
+  border-radius: 8px;
+}
