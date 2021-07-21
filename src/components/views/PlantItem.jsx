@@ -8,7 +8,7 @@ function PlantItem(props) {
   return (
     <>
       {!removePlant && (
-        <div className="Game">
+        <div className="plant-item">
           <h1>{name}</h1>
           <p>{description}</p>
           <p>{care}</p>

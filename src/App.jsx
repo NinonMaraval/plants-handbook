@@ -1,11 +1,9 @@
-import PlantForm from './components/views/PlantForm';
-import PlantsList from './components/views/PlantsList';
+import GeneralRouter from './components/commons/GeneralRouter';
 
 function App() {
   return (
     <div className="App">
-      <PlantsList />
-      <PlantForm />
+      <GeneralRouter />
     </div>
   );
 }

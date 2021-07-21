@@ -13,6 +13,7 @@ function PlantsList() {
       setPlants(response.data);
     });
   }, []);
+
   return (
     <div className="container-plantslist">
       <h1 className="title-plantslist">Bienvenue dans ton carnet de plantes</h1>
