@@ -11,10 +11,15 @@ function Home() {
       <p>Le carnet d&apos;entretien de vos plantes. </p>
       <div className="home-buttons">
         <Link to="/list">
-          <input type="button" value="Consulter mon carnet" />
+          <input className="links" type="button" value="Consulter mon carnet" />
         </Link>
+        <br />
         <Link to="/add">
-          <input type="button" value="Ajouter une plante à mon carnet" />
+          <input
+            className="links"
+            type="button"
+            value="Ajouter une plante à mon carnet"
+          />
         </Link>
       </div>
     </div>

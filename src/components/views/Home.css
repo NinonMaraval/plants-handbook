@@ -13,14 +13,37 @@
 }
 
 .home-buttons {
- display: flex;
- flex-direction: row;
- font-family: 'Krub';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Krub';
+  margin-bottom: 70px;
 }
 
-.button input {
-  color: #236d5e;
+.links {
+  display: flex;
+  justify-content: space-between;
+  color: white;
   font-family: 'Krub';
   cursor: pointer;
   border-radius: 8px;
+  background-color: #236d5e;
+  border-color: none;
+  width: 240px;
+  height: 60px;
+  box-shadow: 3px 3px 3px lightgrey;
+}
+
+@media screen and (min-width: 768px) {
+  .home-buttons {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .links {
+    width: 300px;
+    height: 80px;
+    margin-top: 20px;
+  }
 }
