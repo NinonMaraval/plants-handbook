@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap');
+
+.box-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #f6f6f6;
+}
+
+.name {
+  font-family: 'Indie Flower';
+  font-weight: 600;
+}
+
+.plant-description {
+  font-family: 'Krub';
+  font-size: 15px;
+}
+
+.button-plantitem {
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.button-plantitem:hover {
+  background-color: #236D5E;
+  color: white;
+}

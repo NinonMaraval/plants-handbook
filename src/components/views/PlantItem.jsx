@@ -6,24 +6,25 @@ function PlantItem(props) {
   const { name, description, care, category } = props;
   const [removePlant, setRemovePlant] = useState(false);
   return (
-    <>
+    <div className="box-item">
       {!removePlant && (
         <div className="plant-item">
-          <h1>{name}</h1>
-          <p>{description}</p>
-          <p>{care}</p>
+          <h1 className="name">{name}</h1>
+          <p className="plant-description">{description}</p>
+          <p className="plant-description">{care}</p>
           <p>{category}</p>
           <button
+            className="button-plantitem"
             type="button"
             onClick={function () {
               setRemovePlant(true);
             }}
           >
-            <strong>Supprimer ma plante</strong>
+            X
           </button>
         </div>
       )}
-    </>
+    </div>
   );
 }
 
