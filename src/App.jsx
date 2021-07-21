@@ -1,9 +1,9 @@
-import RemoveMe from './components/RemoveMe';
+import PlantsList from './components/views/PlantsList';
 
 function App() {
   return (
     <div className="App">
-      <RemoveMe />
+      <PlantsList />
     </div>
   );
 }
