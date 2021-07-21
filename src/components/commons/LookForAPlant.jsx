@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import './LookForAPlant.css';
 
 function LookForAPlant(props) {
   const { setSearchValue, searchValue } = props;
