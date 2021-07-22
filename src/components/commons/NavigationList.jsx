@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import home from '../../images/home.svg';
-import plus from '../../images/plus.png';
-import heart from '../../images/heart.png';
+import home from '../../images/home2.svg';
+import add from '../../images/add.svg';
+import flower from '../../images/flower.svg';
 import './NavigationList.css';
 
 function NavigationList() {
@@ -13,10 +13,10 @@ function NavigationList() {
           <img className="logo-navbar" src={home} alt="logo-home" />
         </Link>
         <Link to="/add">
-          <img className="logo-navbar" src={plus} alt="logo-add" />
+          <img className="logo-navbar" src={add} alt="logo-add" />
         </Link>
         <Link to="/list">
-          <img className="logo-navbar" src={heart} alt="logo-list" />
+          <img className="logo-navbar" src={flower} alt="logo-list" />
         </Link>
       </div>
     </>

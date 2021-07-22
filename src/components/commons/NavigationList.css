@@ -8,11 +8,8 @@
   bottom: 0;
   background-size: 20px;
   background-color: white;
-  color: black;
-}
+  background-color: #236d5e;
 
-.logo-navbar:hover {
-  color: #236d5e;
 }
 
 .logo-navbar {

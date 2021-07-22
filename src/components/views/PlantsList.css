@@ -7,28 +7,26 @@
   width: 100%;
   margin-bottom: 10px;
 }
-.container-plantslist {
-  font-family: 'Krub';
-  margin: 10px;
-}
 
 .title {
-  color: #236D5E;
-  text-shadow: #236D5E 1px 0 10px;
+  color: #236d5e;
+  text-shadow: #236d5e 1px 0 10px;
 }
 
 .plants-results {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 0, auto;
-  width: 100%;
-  background-color: #236D5E;
-  padding-top: 20px;
+  background-color: #236d5e;
+  padding-top: 30px;
+  gap: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .plants-results {
     flex-direction: row;
     flex-wrap: wrap;
-}
+    padding-inline: 50px;
+  }
 }

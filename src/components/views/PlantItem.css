@@ -7,14 +7,8 @@
   text-align: center;
   align-content: center;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 20px;
-  max-width: 100%;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  margin-left: 10px;
-  margin-right: 10px;
+  max-width: 300px;
   background-color: #f6f6f6;
 }
 
@@ -37,10 +31,9 @@
 }
 
 .button-plantitem:hover {
-  background-color: #236D5E;
+  background-color: #236d5e;
   color: white;
 }
 
 @media screen and (min-width: 768px) {
-  
 }
