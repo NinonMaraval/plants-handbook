@@ -8,12 +8,16 @@ import './PlantItem.css';
 function PlantItem(props) {
   const { name, description, care, category, id } = props;
   const history = useHistory(null);
+  const refreshPage = () => {
+    window.location.reload(false);
+  };
   const handleDelete = () => {
     console.log(`${process.env.REACT_APP_BACKEND_URL}/plant/${id}`);
     axios
       .delete(`${process.env.REACT_APP_BACKEND_URL}/plant/${id}`)
       .then(() => {
         alert('Plante supprimée !');
+        refreshPage();
         history.push('/list');
       });
   };
