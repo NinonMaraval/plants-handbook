@@ -2,11 +2,13 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
+import { useHistory } from 'react-router-dom';
 import flower2 from '../../images/flower2.png';
 import './PlantForm.css';
 
 function PlantForm() {
   const [select, setSelect] = useState([]);
+  const history = useHistory(null);
   const [plant, setPlant] = useState({
     name: '',
     description: '',
@@ -16,6 +18,7 @@ function PlantForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    history.push('/list');
 
     axios
       .post(`${process.env.REACT_APP_BACKEND_URL}/plant`, plant)

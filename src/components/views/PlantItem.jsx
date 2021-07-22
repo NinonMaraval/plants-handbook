@@ -41,4 +41,3 @@ function PlantItem(props) {
 }
 
 export default PlantItem;
-// TODO : faire que le button supprime de la BDD + mettre une poubelle à la place de la croix
