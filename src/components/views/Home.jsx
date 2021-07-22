@@ -6,7 +6,8 @@ import './Home.css';
 function Home() {
   return (
     <div className="home-container">
-      <h1>Bienvenue sur Plants handbook</h1>
+      <h1>Bienvenue sur</h1>
+      <h1>Plants handbook</h1>
       <img className="home-pic" src={imagehome} alt="home-img" />
       <p>Le carnet d&apos;entretien de vos plantes. </p>
       <div className="home-buttons">

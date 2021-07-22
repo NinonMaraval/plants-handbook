@@ -18,8 +18,17 @@
 }
 
 .plants-results {
+  display: flex;
+  flex-direction: column;
   margin: 0, auto;
   width: 100%;
   background-color: #236D5E;
   padding-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .plants-results {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 }

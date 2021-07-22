@@ -10,7 +10,7 @@ function PlantForm() {
   const [select, setSelect] = useState([]);
   const history = useHistory(null);
   const [plant, setPlant] = useState({
-    name: '',
+    title: '',
     description: '',
     care: '',
     category_id: '',
@@ -30,7 +30,7 @@ function PlantForm() {
             icon: 'success',
             title: 'Nouvelle plante ajoutée avec succès!',
             showConfirmButton: false,
-            timer: 3000,
+            timer: 5000,
           })
         );
       })
@@ -66,7 +66,7 @@ function PlantForm() {
             maxLength="1200"
             rows="2"
             id="Nom"
-            onChange={(e) => setPlant({ ...plant, name: e.target.value })}
+            onChange={(e) => setPlant({ ...plant, title: e.target.value })}
             required
           />
         </label>

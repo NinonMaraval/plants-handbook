@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap');
+
 body {
   margin: 0;
+  font-family: 'Kurb', sans-serif;
+  font-weight: 300;
 }

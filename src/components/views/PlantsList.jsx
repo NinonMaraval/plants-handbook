@@ -26,18 +26,14 @@ function PlantsList() {
       </div>
       <div className="plants-results">
         {plants
-          .filter(
-            (plant) =>
-              plant.name.toLowerCase().includes(searchValue) ||
-              plant.description.toLowerCase().includes(searchValue)
-          )
+          .filter((plant) => plant.title.toLowerCase().includes(searchValue))
           .map((plant) => {
             return (
               <PlantItem
-                name={plant.name}
+                name={plant.title}
                 description={plant.description}
                 care={plant.care}
-                category={plant.category}
+                category={plant.name}
                 id={plant.id}
                 key={plant.id}
               />
