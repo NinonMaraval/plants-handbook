@@ -38,6 +38,7 @@ function PlantsList() {
                 description={plant.description}
                 care={plant.care}
                 category={plant.category}
+                id={plant.id}
                 key={plant.id}
               />
             );
