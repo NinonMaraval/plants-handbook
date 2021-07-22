@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 0, auto;
   background-color: #236d5e;
   padding-top: 30px;
@@ -28,5 +29,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding-inline: 50px;
+    align-items: normal;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .plants-results {
   }
 }
