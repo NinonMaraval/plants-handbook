@@ -28,6 +28,7 @@ function PlantForm() {
           Swal.fire({
             position: 'center',
             icon: 'success',
+            iconColor: '#236d5e',
             title: 'Hop! Une nouvelle plante dans ton carnet !',
             showConfirmButton: false,
             timer: 3000,
