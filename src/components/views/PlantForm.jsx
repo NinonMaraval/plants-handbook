@@ -18,11 +18,11 @@ function PlantForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    history.push('/list');
 
     axios
       .post(`${process.env.REACT_APP_BACKEND_URL}/plant`, plant)
       .then((response) => {
+        history.push('/list');
         JSON.stringify(
           response,
           Swal.fire({

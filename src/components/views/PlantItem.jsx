@@ -7,7 +7,6 @@ import './PlantItem.css';
 
 function PlantItem(props) {
   const { name, description, care, category, id } = props;
-  console.log(category);
   const history = useHistory(null);
   const refreshPage = () => {
     window.location.reload(false);
