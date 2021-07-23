@@ -30,7 +30,7 @@ function PlantForm() {
             icon: 'success',
             title: 'Nouvelle plante ajoutée avec succès!',
             showConfirmButton: false,
-            timer: 5000,
+            timer: 3000,
           })
         );
       })
