@@ -28,7 +28,7 @@ function PlantForm() {
           Swal.fire({
             position: 'center',
             icon: 'success',
-            title: 'Nouvelle plante ajoutée avec succès!',
+            title: 'Hop! Une nouvelle plante dans ton carnet !',
             showConfirmButton: false,
             timer: 3000,
           })
