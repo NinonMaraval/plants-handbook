@@ -5,4 +5,5 @@ body {
   padding: 0;
   font-family: 'Kurb', sans-serif;
   font-weight: 300;
+  overscroll-behavior: none;
 }
