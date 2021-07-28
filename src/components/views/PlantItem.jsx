@@ -13,7 +13,7 @@ function PlantItem(props) {
   };
   const handleDelete = () => {
     axios
-      .delete(`https://plantshandbook.herokuapp.com/plant/${id}`)
+      .delete(`${process.env.REACT_APP_BACKEND_URL}/plant/${id}`)
       .then(() => {
         alert('Plante supprimée !');
         refreshPage();

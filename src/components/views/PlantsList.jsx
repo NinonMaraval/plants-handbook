@@ -9,7 +9,7 @@ function PlantsList() {
   const [searchValue, setSearchValue] = React.useState('');
 
   useEffect(() => {
-    axios.get('https://plantshandbook.herokuapp.com/plant').then((response) => {
+    axios.get(`${process.env.REACT_APP_BACKEND_URL}/plant`).then((response) => {
       setPlants(response.data);
     });
   }, []);

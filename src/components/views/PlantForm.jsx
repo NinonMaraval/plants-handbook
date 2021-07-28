@@ -20,7 +20,7 @@ function PlantForm() {
     event.preventDefault();
 
     axios
-      .post('https://plantshandbook.herokuapp.com/}/plant', plant)
+      .post(`${process.env.REACT_APP_BACKEND_URL}/plant`, plant)
       .then((response) => {
         history.push('/list');
         JSON.stringify(
@@ -49,7 +49,7 @@ function PlantForm() {
 
   useEffect(() => {
     axios
-      .get('https://plantshandbook.herokuapp.com/category')
+      .get(`${process.env.REACT_APP_BACKEND_URL}/category`)
       .then((response) => {
         setSelect(response.data);
       });
