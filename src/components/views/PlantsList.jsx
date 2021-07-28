@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-// import LookForAPlant from '../commons/LookForAPlant';
+import LookForAPlant from '../commons/LookForAPlant';
 import PlantItem from './PlantItem';
 import './PlantsList.css';
 
@@ -19,14 +19,9 @@ function PlantsList() {
       <h1 className="title">Bienvenue dans ton carnet de plantes</h1>
       <div className="search-engine">
         <h2>Cherche une plante !</h2>
-        <input
-          className="search-input"
-          value={searchValue}
-          type="text"
-          placeholder="Tape le nom d'une plante..."
-          onChange={(event) => {
-            setSearchValue(event.target.value);
-          }}
+        <LookForAPlant
+          searchValue={searchValue}
+          setSearchValue={setSearchValue}
         />
       </div>
       <div className="plants-results">
