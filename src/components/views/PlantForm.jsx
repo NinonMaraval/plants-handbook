@@ -15,6 +15,8 @@ function PlantForm() {
     care: '',
     category_id: '',
   });
+  const [pic, setPic] = useState(null);
+  console.log(pic);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -59,6 +61,14 @@ function PlantForm() {
       <form className="plantGlobal" onSubmit={handleSubmit}>
         <h1 className="addPlant">Ajouter une plante </h1>
         <img className="flower" src={flower2} alt="flower-pic" />
+        <p className="addPic">Ajouter une photo :</p>
+        <input
+          className="inputPlant'"
+          type="file"
+          label="picture"
+          name="picture"
+          onChange={(e) => setPic(e.target.files[0])}
+        />
         <label htmlFor="Nom">
           <span className="textAreaLabel">Nom:</span>
           <textarea
