@@ -48,6 +48,7 @@ function PlantForm() {
   };
 
   useEffect(() => {
+    console.log(process.env);
     axios
       .get(`${process.env.REACT_APP_BACKEND_URL}/category`)
       .then((response) => {
