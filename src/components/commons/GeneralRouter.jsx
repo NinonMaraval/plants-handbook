@@ -4,6 +4,7 @@ import Home from '../views/Home';
 import PlantForm from '../views/PlantForm';
 import PlantItem from '../views/PlantItem';
 import PlantsList from '../views/PlantsList';
+import Register from '../views/Register';
 import Header from './Header';
 import NavigationList from './NavigationList';
 
@@ -13,6 +14,9 @@ function GeneralRouter() {
       <Header />
       <div>
         <Switch>
+          <Route exact path="/register">
+            <Register />
+          </Route>
           <Route exact path="/">
             <Home />
           </Route>
